@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keep your posture in best way with PosMate">
+    <meta name="theme-color" content="#317EFB">
+    <title>PosMate | {% block title %} Have a buddy who guides you to the best {% endblock title %} </title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="static/styles/home.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+
+    <!-- Scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    {% block head %} {% endblock head%}
+</head>
+
+<body class="main">
+    <div id="mySidebar" class="sidebar">
+        <a href="/">Home</a>
+        <a href="https://blog.tensorflow.org/2018/05/real-time-human-pose-estimation-in.html">How it Works?</a>
+        <div class="cbtn"></div>
+    </div>
+    <div class="bod">
+        <header>
+            <div id="logo">POSMATE</div>
+            <div><a href="https://blog.tensorflow.org/2018/05/real-time-human-pose-estimation-in.html"><button id="hw"
+                        type="submit" class="btn btn-outline-dark btn-lg">How it Works?</button></a></div>
+            <div><a href="/"><button id="hm" type="submit" class="btn btn-outline-dark btn-lg">Home</button></a></div>
+            <br>
+            <div class="ic"><img role="button" onclick="openNav()" src="/static/hamburger.png" alt="#"></div>
+            <br>
+
+            
+        </header>
+        
+    </div>
+    
+    {% block home_body %}
+    {% endblock home_body %}
+    {% block work_body %}
+    {% endblock work_body %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    </div>
+    <script src="/static/scripts/home.js"></script>
+
+</body>
+
+</html>
